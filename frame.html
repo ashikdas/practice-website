@@ -17,9 +17,14 @@
             border: 10px solid goldenrod;
             border-radius: 10px;
             margin: 10px;
+            overflow: hidden;
         }
         .photo-frame .photo img{
             width: 100%;
+        }
+        .photo-frame:hover .photo img {
+            transform: scale(1.2);
+            transition: transform 2s;
         }
         .photo-detail{
             position: absolute;
@@ -30,7 +35,7 @@
         }
         .photo-frame:hover .photo-detail{
             display: block;
-            background-color: rgba(218, 165, 32, 0.5);
+            background-color: rgba(100, 79, 26, 0.4);
         }
         .photo-frame:hover .photo-detail h3{
             color: white;
